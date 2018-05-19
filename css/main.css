@@ -1,0 +1,48 @@
+*{ margin: 0;
+	padding: 0;
+	box-sizing: border-box;}
+body{ background: #f9f9f9;}	
+
+.slide-img-wrapper{ width: 960px;
+	margin: 0 auto;
+	
+
+}	
+.slide-box-all{
+		width: 960px;
+		border-radius: 4px;
+		border:gainsboro 1px solid;
+		overflow: hidden; }
+.slide-box{ width: 960px;
+	display: flex;
+	align-items: flex-start;
+	transition: all 0.5s;
+	}
+.slide-buttons{ height: 80px;
+	display: flex;
+	justify-content: center;
+	width: 960px;
+	 background: linear-gradient(180deg, #fafafa, #ececec); /* 标准的语法 */
+	border-top:1px solid  lightsalmon;
+	}	
+.slide-buttons span{ height: 80px;
+		width: 80px;
+		text-align: center;
+		line-height: 80px;
+		display: block;
+		cursor: pointer;	
+		position: relative;
+		}		
+.slide-buttons span.active:after{
+	border:10px solid  transparent;
+	border-top: lightsalmon solid 10px;
+	position: absolute;
+	top:0;
+	left:30px;
+	content: '';
+	z-index: 9;
+}
+
+.slide-buttons>span:nth-child(4){
+	border: none ;
+}
